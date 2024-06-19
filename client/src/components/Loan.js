@@ -41,6 +41,7 @@ const Loan = ({data}) => {
                             <p class="duration">Duration : {loan.duration} months</p>
                             <p class="description">Description : {loan.msg}</p>
                             <button class="delete" data-toggle="modal" data-target="#exampleModalCenter" onClick={() => {deleteLoan(loan.mobile, loan.code)}}>Delete</button>
+                            <button>Update</button>
                         </div>
                 </div>
             </li>
