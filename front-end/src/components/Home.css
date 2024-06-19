@@ -1,0 +1,54 @@
+.display-4 {
+    color : white;
+    margin-left: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .display-5 {
+    color: purple;
+  }
+  
+  .h2 {
+    font-weight: normal;
+    color: rgb(111, 62, 116);
+    text-shadow: 8px 2px 20px;
+  
+  }
+  .top {
+    margin: 0;
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+  }
+  .container {
+    position: relative;
+    top: 100px;
+  }
+  
+  .btn {
+    background-color: rgb(111, 62, 116);
+    margin: 15px;
+    border: 1px solid  rgb(111, 62, 116);
+    color: white;
+  }
+  
+  .pair {
+    font-size: large;
+  }
+
+  #signin {
+    background-color: white;
+    color: purple;
+    width: 7%;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  #signin:hover {
+    background-color: rgb(15, 201, 15);
+    color: white;
+  }
+
+  img {
+    box-shadow: 0 0 5px;
+  }

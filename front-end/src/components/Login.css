@@ -1,0 +1,19 @@
+#home {
+    background-color: white;
+    color: purple;
+    width: 7%;
+    font-size: large;
+    font-weight: bold;
+}
+
+#home:hover {
+    background-color: rgb(15, 201, 15);
+    color: white;
+}
+
+.LoginForm {
+    margin: 5% 30%;
+    background-color: white;
+    padding: 2%;
+    box-shadow: 0 0 10px;
+}

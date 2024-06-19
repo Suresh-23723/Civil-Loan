@@ -1,0 +1,21 @@
+.delete {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.delete:hover {
+    color : red;
+    background-color: white;
+}
+
+li {
+    margin-left: 20px;
+    box-shadow: 0 0 5px;
+    border-radius: 10px;
+    width: 50%;
+    font-weight: bold;
+}

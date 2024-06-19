@@ -1,0 +1,47 @@
+.myForm {
+    margin: 10% 30%;
+    padding: 1% 2%;
+    box-shadow: 0 0 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.myEMI h2 {
+    text-align: center;
+    font-weight: normal;
+    color: rgb(111, 62, 116);
+}
+#getEMI {
+    background-color: rgb(111, 62, 116);
+    border: 1px solid rgb(111, 62, 116);
+    font-weight: bold;
+}
+
+#getEMI:hover {
+    background-color:white;
+    color:  rgb(111, 62, 116);
+}
+.top {
+    margin: 0;
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+}
+
+.display-4 {
+    color : white;
+    margin-left: 10px;
+}
+
+#home {
+    background-color: white;
+    color: purple;
+    width: 7%;
+    font-size: large;
+    font-weight: bold;
+}
+
+#home:hover {
+    background-color: rgb(15, 201, 15);
+    color: white;
+}
