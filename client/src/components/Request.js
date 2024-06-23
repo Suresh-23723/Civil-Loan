@@ -23,7 +23,7 @@ const printErr = (err) => {
         ans += 'duration, ';
     }
     if(err.serviceType) {
-        ans += 'service type';
+        ans += 'service type, ';
     }
 
     if(ans === 'You have error in ') {

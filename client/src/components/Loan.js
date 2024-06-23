@@ -8,6 +8,7 @@ const Loan = ({data}) => {
     const [modalTitle, setModalTitle] = useState("");
     const [modalBody, setModalBody] = useState("");
     const deleteLoan = (mobile, code) => {
+        
         const value = {
             mobile: mobile,
             type: code
@@ -31,6 +32,11 @@ const Loan = ({data}) => {
             });
         
     }
+
+    const updateLoan = () => {
+        
+        
+    }
     return data.map(loan => {
         return (
             <div>
@@ -41,7 +47,7 @@ const Loan = ({data}) => {
                             <p class="duration">Duration : {loan.duration} months</p>
                             <p class="description">Description : {loan.msg}</p>
                             <button class="delete" data-toggle="modal" data-target="#exampleModalCenter" onClick={() => {deleteLoan(loan.mobile, loan.code)}}>Delete</button>
-                            <button>Update</button>
+                            <button class="update" data-toggle="modal" data-target="#exampleModalCenter" onClick={() => {updateLoan(loan.mobile, loan.code)}}>Update</button>
                         </div>
                 </div>
             </li>

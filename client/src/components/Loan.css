@@ -19,3 +19,12 @@ li {
     width: 50%;
     font-weight: bold;
 }
+
+.update {
+    margin-left: 20px;  
+    border: none;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    padding: 8px 25px;
+    border-radius: 10px;
+}
