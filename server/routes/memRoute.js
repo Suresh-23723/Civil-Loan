@@ -114,7 +114,7 @@ router.delete('/cancelmember', async (req, res) => {
             password: req.body.password
         });
         if(delMem.deletedCount == 0) {
-            res.json(400).json({ 
+            res.status(400).json({ 
                 status: 'details-mismatch',
                 message: 'Check your mobile number and password'
             });

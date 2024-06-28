@@ -1,10 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 import './Loan.css';
+import { useNavigate } from 'react-router-dom';
 
 
 const Loan = ({data}) => {
     
+    const navigate = useNavigate();
     const [modalTitle, setModalTitle] = useState("");
     const [modalBody, setModalBody] = useState("");
     const deleteLoan = (mobile, code) => {
@@ -33,9 +35,8 @@ const Loan = ({data}) => {
         
     }
 
-    const updateLoan = () => {
-        
-        
+    const updateLoan = (mobile, code) => {
+        navigate("/update");
     }
     return data.map(loan => {
         return (
@@ -69,6 +70,7 @@ const Loan = ({data}) => {
                     </div>
                 </div>
             </div>
+            
         </div>
         );
     });
