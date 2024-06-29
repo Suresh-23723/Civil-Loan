@@ -24,7 +24,27 @@ user can create their profiles, read the required data from database, update the
 * `cd client`
 * `npm run start`
 * At localhost:3000 the React Application is served.
-  
+
+## Image Preview
+### Home page
+
+
+![Home page](/client/public/screenshots/home.png?raw=true "Home")
+
+### Loan Application Form
+
+![Loan Application form](/client/public/screenshots/loan_application_form.png?raw=true "application")
+
+### Sign up page
+
+![Sign up page](/client/public/screenshots/sign_up_form.png?raw=true "Sign_up")
+
+
+### Update Loan Page
+
+![Update Loans Page](/client/public/screenshots/update_loan.png?raw=true "Home")
+
+
 ## Known issues
 * update feature is not developed
 * All the data is stored only in a local database
