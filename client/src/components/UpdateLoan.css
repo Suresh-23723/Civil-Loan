@@ -1,0 +1,33 @@
+.header {
+  background-color: purple;
+  color: white;
+  font-size: 50px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.head {
+  margin-top: -10px;
+}
+#home {
+  background-color: white;
+  color: purple;
+  width: 7%;
+  font-size: large;
+  font-weight: bold;
+}
+
+#home:hover {
+  background-color: rgb(15, 201, 15);
+  color: white;
+}
+
+.myForm {
+  margin: 5% 30%;
+  padding: 1% 2%;
+  box-shadow: 0 0 10px;
+  background-color: white;
+  border-radius: 10px;
+}

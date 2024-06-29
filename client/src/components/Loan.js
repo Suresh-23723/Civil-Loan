@@ -36,7 +36,7 @@ const Loan = ({data}) => {
     }
 
     const updateLoan = (mobile, code) => {
-        navigate("/update");
+        navigate("/updateloan");
     }
     return data.map(loan => {
         return (

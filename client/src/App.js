@@ -5,7 +5,7 @@ import Request from './components/Request';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import Landing from './components/Landing';
-import Update from './components/Update';
+import UpdateLoan from './components/UpdateLoan';
 
 const App = () => { 
    return ( 
@@ -17,7 +17,7 @@ const App = () => {
             <Route path="/new" element={<Signup/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/landing" element={<Landing/>}/>
-            <Route path="/update" element={<Update/>} />
+            <Route path="/updateloan" element={<UpdateLoan/>} />
        </Routes> 
     </div> 
 )} 
