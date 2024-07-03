@@ -1,11 +1,11 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-
+import { useState } from "react";
 import './UpdateLoan.css';
 const UpdateLoan = () => {
   
     const navigate = useNavigate();
-
+    const [message,setMessage] = useState("");
 
     function update(e) {
         e.preventDefault();
@@ -33,7 +33,7 @@ const UpdateLoan = () => {
 
         fetch("http://localhost:8000/request/update", requestOptions)
             .then(res => res.json())
-            .then(data => console.log(data));
+            .then(data => setMessage(data.message));
     }
     return (
       <div>
@@ -112,7 +112,7 @@ const UpdateLoan = () => {
               </div>
           </div>
           <div class="alert" role="alert">
-              {}
+              {message}
           </div>
       </form>
       </div>

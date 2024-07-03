@@ -7,8 +7,8 @@ import { useNavigate } from 'react-router-dom';
 const Loan = ({data}) => {
     
     const navigate = useNavigate();
-    const [modalTitle, setModalTitle] = useState("");
-    const [modalBody, setModalBody] = useState("");
+    const [modalTitle, setModalTitle] = useState("Warning");
+    const [modalBody, setModalBody] = useState("Loan details are deleted permanently !!!");
     const deleteLoan = (mobile, code) => {
         
         const value = {
@@ -35,7 +35,7 @@ const Loan = ({data}) => {
         
     }
 
-    const updateLoan = (mobile, code) => {
+    const updateLoan = () => {
         navigate("/updateloan");
     }
     return data.map(loan => {
@@ -45,10 +45,10 @@ const Loan = ({data}) => {
                 <div class="card bg-light mb-3">
                     <div class="card-header">{(loan.code === "MF")? "Micro-Finance Loan" : "Small Scale Industries Loan"}</div>
                         <div class="card-body">
-                            <p class="duration">Duration : {loan.duration} months</p>
+                            <p class="amount-duration"><span id="amt">Amount: ₹ {loan.amt}</span>Duration : {loan.duration} months</p>
                             <p class="description">Description : {loan.msg}</p>
-                            <button class="delete" data-toggle="modal" data-target="#exampleModalCenter" onClick={() => {deleteLoan(loan.mobile, loan.code)}}>Delete</button>
-                            <button class="update" data-toggle="modal" data-target="#exampleModalCenter" onClick={() => {updateLoan(loan.mobile, loan.code)}}>Update</button>
+                            <button class="delete" data-toggle="modal" data-target="#exampleModalCenter" >Delete</button>
+                            <button class="update" onClick={() => {updateLoan()}}>Update</button>
                         </div>
                 </div>
             </li>
@@ -65,7 +65,11 @@ const Loan = ({data}) => {
                             {modalBody}
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal" onClick={() => {window.location.reload()}}>OK</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal" onClick={() => {
+                                deleteLoan(loan.mobile,loan.code);
+                                window.location.reload();
+                            }}>Delete</button>
                         </div>
                     </div>
                 </div>
