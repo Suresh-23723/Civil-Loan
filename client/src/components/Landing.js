@@ -31,7 +31,7 @@ const Landing = () => {
             setRMessage("You didn't made any Loan Requests");
           }
         });
-      },[]);
+      },[user.mobile]);
     return(
         <div>
             <div class="top">

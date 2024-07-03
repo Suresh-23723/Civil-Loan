@@ -44,8 +44,13 @@ const UpdateLoan = () => {
 
       <div class="myForm">
       <form >
+            <div class="form row">
+              <div class="col text-center">
+                  <p id="Note">Please fill the marked (*) feilds and fill only the feilds you need to update</p>
+              </div>
+          </div>
           <div class="form-group row">
-              <label for="Mobile" class="col-sm-2 col-form-label">Mobile</label>
+              <label for="Mobile" class="col-sm-2 col-form-label">Mobile *</label>
               <div class="col-sm-10">
                 <input type="text" class="form-control" id="mobile" placeholder="Enter the mobile number"/>
               </div>
@@ -83,7 +88,7 @@ const UpdateLoan = () => {
           </fieldset>
           <fieldset class="form-group">
               <div class="row">
-              <legend class="col-form-label col-sm-2 pt-0">Service</legend>
+              <legend class="col-form-label col-sm-2 pt-0">Service *</legend>
               <div class="col-sm-10">
                   <div class="form-check">
                   <input class="form-check-input" type="radio" name="serviceType" id="SCB" value="SCB"/>
