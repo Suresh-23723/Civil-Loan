@@ -46,7 +46,6 @@ user can create their profiles, read the required data from database, update the
 
 
 ## Known issues
-* update feature is not developed
 * All the data is stored only in a local database
 
 The above issues are solved and a better version will be contributed soon.
